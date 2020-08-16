@@ -1,0 +1,43 @@
+:root {
+    --color-btn-primary-text: hsl(var(--color-base-hue), 100%, 25%);
+    --color-btn-primary-text-dark: hsl(var(--color-base-hue), 100%, 15%);
+
+    --color-btn-primary-backgound: hsl(var(--color-base-hue), 100%, 80%);
+    --color-btn-primary-backgound-dark: hsl(var(--color-base-hue), 100%, 70%);
+
+    --color-btn-danger-text: black;
+    --color-btn-danger-text-dark: black;
+
+    --color-btn-danger-backgound: hsl(300, 100%, 75%);
+    --color-btn-danger-backgound-dark: hsl(300, 100%, 70%);
+
+    --color-btn-border: pink;
+}
+
+.btn {
+    border: 1px solid var(--color-btn-border);
+    border-radius: 0.5rem;
+    padding: 0.5rem 1rem;
+    font-size: 1.2rem;
+    font-family: "Gotham Rounded";
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+}
+
+.btn-primary {
+    color: var(--color-btn-primary-text);
+    background-color: var(--color-btn-primary-backgound);
+}
+.btn-primary:hover {
+    color: var(--color-btn-primary-text-dark);
+    background-color: var(--color-btn-primary-backgound-dark);
+}
+.btn-danger {
+    color: var(--color-btn-danger-text);
+    background-color: var(--color-btn-danger-backgound);
+}
+.btn-danger:hover {
+    color: var(--color-btn-danger-text-dark);
+    background-color: var(--color-btn-danger-backgound-dark);
+}
